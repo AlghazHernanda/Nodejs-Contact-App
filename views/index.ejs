@@ -1,0 +1,15 @@
+<h1>ini node js html</h1>
+<h4>Daftar Mahasiswa</h4>
+<% if (mahasiswa.length < 1) { %>
+	<p>daftar mahasiswa masih kosong</p>
+	<% } else { %>
+		<% mahasiswa.forEach(mhs=> { %>
+			<ul>
+				<li>Nama: <%= mhs.nama %>
+				</li>
+				<li>Email: <%= mhs.email %>
+				</li>
+			</ul>
+
+			<% }) %>
+				<% } %>
